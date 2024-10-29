@@ -118,7 +118,9 @@ const Portfolio = () => {
                 className="w-[600px] h-[400px] object-cover mb-8"
               />
               <h1 className="text-2xl mb-6">{selectedItem.title}</h1>
-              <div className="prose max-w-none">
+              <div className="prose max-w-none"> 
+              <p><a href={selectedItem.link}>Link: {selectedItem.title}</a></p>
+              <br></br>
                 {selectedItem.content}
               </div>
             </article>
