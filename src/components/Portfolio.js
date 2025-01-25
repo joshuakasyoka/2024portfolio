@@ -50,7 +50,7 @@ const Portfolio = () => {
       <header className="fixed top-0 left-0 right-0 bg-white z-50 border-b">
         <div className="max-w-screen-2xl mx-auto px-6 py-4 flex justify-between items-center">
           <div>
-          <h3 className="text-xl hover:text-[#A3D952] transition-colors duration-300">JOSH GREEN</h3>
+          <h3 className="text-xl text-black hover:text-[#5CE98B] transition-colors duration-300">JOSH GREEN</h3>
           <p className="text-sm">Design. Research. Writing.</p>
           </div>
           

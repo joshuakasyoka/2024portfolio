@@ -16,7 +16,7 @@ export const portfolioItems = [
     {
       id: 3,
       title: "Crumle Magazine 2019",
-      type: "article",
+      type: "project",
       image: "/images/image 3.png",
       content: "Article content here..."
     },
@@ -30,7 +30,7 @@ export const portfolioItems = [
     {
       id: 5,
       title: "Civic Ice Cream 2020",
-      type: "article",
+      type: "project",
       image: "/images/image 5.png",
       content: "Article content here..."
     },
@@ -44,7 +44,7 @@ export const portfolioItems = [
     {
       id: 7,
       title: "Jura Residency 2019",
-      type: "article",
+      type: "project",
       image: "/images/image 7.png",
       content: "Article content here..."
     },
@@ -65,7 +65,7 @@ export const portfolioItems = [
     {
       id: 10,
       title: "Milking Stools 2022",
-      type: "article",
+      type: "project",
       image: "/images/image 10.png",
       content: "Article content here..."
     },
@@ -79,7 +79,7 @@ export const portfolioItems = [
     {
       id: 12,
       title: "Wormery Workshop 2024",
-      type: "article",
+      type: "project",
       image: "/images/image 12.png",
       content: "Article content here..."
     },
@@ -93,7 +93,7 @@ export const portfolioItems = [
     {
       id: 14,
       title: "Data of Everyday Objects 2024",
-      type: "article",
+      type: "project",
       image: "/images/image 14.png",
       content: "Article content here..."
     },
@@ -114,7 +114,7 @@ export const portfolioItems = [
       {
         id: 17,
         title: "Small Spaces Garden 2022",
-        type: "article",
+        type: "project",
         image: "/images/image 17.png",
         content: "Article content here..."
       },
@@ -128,7 +128,7 @@ export const portfolioItems = [
       {
         id: 19,
         title: "Outlandish 2020",
-        type: "article",
+        type: "project",
         image: "/images/image 19.png",
         content: "Article content here..."
       },
@@ -142,7 +142,7 @@ export const portfolioItems = [
       {
         id: 21,
         title: "Fountainbridge Wiki 2018",
-        type: "article",
+        type: "project",
         image: "/images/image 21.png",
         content: "Article content here..."
       },
@@ -156,14 +156,14 @@ export const portfolioItems = [
         {
           id: 23,
           title: "Recetas Urbanas 2017",
-          type: "article",
+          type: "project",
           image: "/images/image 23.png",
           content: "Article content here..."
         },
         {
           id: 24,
           title: "Moata Net Zero 2023",
-          type: "article",
+          type: "project",
           image: "/images/image 24.png",
           content: "Article content here..."
         },
