@@ -1,5 +1,7 @@
 'use client';
 
+<link rel="stylesheet" href="https://use.typekit.net/exw6euy.css"></link>
+
 import React, { useState, useEffect } from 'react';
 import { portfolioItems } from '../lib/data';
 
@@ -10,7 +12,7 @@ const classNames = (...classes) => {
 const getTileSize = () => {
   const sizes = [
     'col-span-1 row-span-2',
-    'col-span-2 row-span-2',
+    'col-span-1 row-span-1',
     'col-span-1 row-span-1'
   ];
   return sizes[Math.floor(Math.random() * sizes.length)];
@@ -34,11 +36,11 @@ const Portfolio = () => {
   );
 
   return (
-    <div className="min-h-screen bg-white font-['Courier_New',_'Courier',_monospace]">
+    <div className="min-h-screen bg-white font-['Heimat Mono Regular',_'Arial',_monospace]">
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 bg-white z-50 border-b">
         <div className="max-w-screen-2xl mx-auto px-6 py-4 flex justify-between items-center">
-          <h1 className="text-xl">SQUASH GREEN</h1>
+          <h3 className="text-xl hover:text-[#A3D952] transition-colors duration-300">JOSH GREEN</h3>
           
           <nav className="flex gap-8">
             <button
@@ -118,7 +120,7 @@ const Portfolio = () => {
                 className="w-[600px] h-[400px] object-cover mb-8"
               />
               <h1 className="text-2xl mb-6">{selectedItem.title}</h1>
-              <div className="prose max-w-none"> 
+              <div className="prose max-w-96"> 
               <p><a href={selectedItem.link}>Link: {selectedItem.title}</a></p>
               <br></br>
                 {selectedItem.content}
