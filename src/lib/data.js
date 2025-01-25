@@ -53,7 +53,6 @@ export const portfolioItems = [
         title: "Turning Collective 2022",
         type: "project",
         image: "/images/image 8.png",
-        link: "https://digital-probes-archive-2.vercel.app/",
         content: "This Digital Probes Archive serves as an interactive collection of tools designed to illuminate the complex relationship between artificial intelligence and our digital commons. Each probe functions as a hands-on experiment, allowing citizens to directly engage with and understand how AI systems can impact our civic autonomy. From exploring algorithmic bias to examining data ownership, these probes reveal the often invisible ways AI shapes our digital landscape. By making these concepts tangible and explorable, the archive empowers visitors to think critically about AI's role in our society and the importance of protecting our collective digital rights."
       },
           {
@@ -103,7 +102,6 @@ export const portfolioItems = [
         title: "Digital Probes Archive 2024",
         type: "project",
         image: "/images/image 15.png",
-        link: "https://digital-probes-archive-2.vercel.app/",
         content: "This Digital Probes Archive serves as an interactive collection of tools designed to illuminate the complex relationship between artificial intelligence and our digital commons. Each probe functions as a hands-on experiment, allowing citizens to directly engage with and understand how AI systems can impact our civic autonomy. From exploring algorithmic bias to examining data ownership, these probes reveal the often invisible ways AI shapes our digital landscape. By making these concepts tangible and explorable, the archive empowers visitors to think critically about AI's role in our society and the importance of protecting our collective digital rights."
       },
       {
@@ -153,7 +151,6 @@ export const portfolioItems = [
           title: "Turinglab 2021",
           type: "project",
           image: "/images/image 22.png",
-          link: "https://digital-probes-archive-2.vercel.app/",
           content: "This Digital Probes Archive serves as an interactive collection of tools designed to illuminate the complex relationship between artificial intelligence and our digital commons. Each probe functions as a hands-on experiment, allowing citizens to directly engage with and understand how AI systems can impact our civic autonomy. From exploring algorithmic bias to examining data ownership, these probes reveal the often invisible ways AI shapes our digital landscape. By making these concepts tangible and explorable, the archive empowers visitors to think critically about AI's role in our society and the importance of protecting our collective digital rights."
         },
         {

@@ -18,13 +18,22 @@ const getTileSize = () => {
   return sizes[Math.floor(Math.random() * sizes.length)];
 };
 
+const shuffleArray = (array) => {
+  const newArray = [...array];
+  for (let i = newArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+  }
+  return newArray;
+};
+
 const Portfolio = () => {
   const [filter, setFilter] = useState('all');
   const [selectedItem, setSelectedItem] = useState(null);
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    const itemsWithSizes = portfolioItems.map(item => ({
+    const itemsWithSizes = shuffleArray(portfolioItems).map(item => ({
       ...item,
       size: getTileSize()
     }));
@@ -40,7 +49,10 @@ const Portfolio = () => {
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 bg-white z-50 border-b">
         <div className="max-w-screen-2xl mx-auto px-6 py-4 flex justify-between items-center">
+          <div>
           <h3 className="text-xl hover:text-[#A3D952] transition-colors duration-300">JOSH GREEN</h3>
+          <p className="text-sm">Design. Research. Writing.</p>
+          </div>
           
           <nav className="flex gap-8">
             <button
@@ -77,7 +89,7 @@ const Portfolio = () => {
       {/* Main Grid */}
       <main className="pt-20 px-6">
         <div className="max-w-screen-2xl mx-auto">
-          <div className="grid grid-cols-5 auto-rows-[200px] gap-6">
+        <div className="grid grid-cols-5 auto-rows-[200px] gap-6 mt-4">
             {filteredItems.map((item) => (
               <button
                 key={item.id}
@@ -121,8 +133,12 @@ const Portfolio = () => {
               />
               <h1 className="text-2xl mb-6">{selectedItem.title}</h1>
               <div className="prose max-w-96"> 
-              <p><a href={selectedItem.link}>Link: {selectedItem.title}</a></p>
-              <br></br>
+                {selectedItem.link && (
+                  <>
+                    <p><a href={selectedItem.link}>Link: {selectedItem.title}</a></p>
+                    <br />
+                  </>
+                )}
                 {selectedItem.content}
               </div>
             </article>
