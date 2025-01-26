@@ -3,6 +3,7 @@ export const portfolioItems = [
       id: 1,
       title: "People & Planet 2022",
       type: "project",
+      link: "https://www.mottmac.com/en-gb/digital-solutions/",
       image: "/images/image 1.png",
       content: "While working at Mettle Studio I designed 'People and Planet' - a digital assessment tool that helps civil engineering project managers evaluate community and environmental impacts. Created in partnership with the Environment Agency, Scottish Water and Mott MacDonald, the tool analyses social and environmental indicators to identify potential risks and opportunities."
     },
@@ -17,6 +18,7 @@ export const portfolioItems = [
       id: 3,
       title: "Crumle Magazine 2019",
       type: "project",
+      link: "https://crumblemag.com/",
       image: "/images/image 3.png",
       content: "Crumble Magazine, a joint publication of Edinburgh University and Edinburgh College of Art, features writing from students and professionals who aim to energize architectural discourse. I served as an illustrator for several issues."
     },
@@ -24,6 +26,7 @@ export const portfolioItems = [
       id: 4,
       title: "Artichoke Print Studio 2023",
       type: "project",
+      links: "https://www.artichokeprintworkshop.co.uk/",
       image: "/images/image 4.png",
       content: "At Artichoke Print Studio's open access workshops, I learned printmaking techniques including etching and aquatint. The facility serves artists, students, and community groups with seven presses, including two Rochat Etching Presses, supporting both intaglio and relief printing. The studio offers courses and technical support for all skill levels."
     },
@@ -52,6 +55,7 @@ export const portfolioItems = [
         id: 8,
         title: "Turning Collective 2022",
         type: "project",
+        link: "https://maps.app.goo.gl/ewRETFHT2SQt1Wjd6",
         image: "/images/image 8.png",
         content: "An hour’s drive from Lyon there is a small village called Cerin. In the early 1980s my grandparents moved here (my grandfather was a furniture maker in Oxford, owning a small studio called Crowdys, and in his retirement brought his workshop to the village). The workshop became a space for learning about traditional crafts such as woodturning on lathes, and also a space for sharing language and stories. In the village, which is also home to an unusually large number of palaeontologists, being located near a famous fossil discovery site, there is now an unusually large number of residents who are skilled on the lathe. The workshop still exists 40 years later and most summers I return to continue the trend of creating, teaching and learning. The community which exists around this one workshop is multi-generational and multilingual - both important parts of how I think about my design practice."
       },
@@ -73,22 +77,25 @@ export const portfolioItems = [
       id: 11,
       title: "Kyoto Design Lab 2024",
       type: "project",
+      link: "https://www.d-lab.kit.ac.jp/",
       image: "/images/image 11.png",
-      content: "Project content here..."
+      content: "During summer 2024, I worked at KYOTO Design Lab (D-lab), a cross-disciplinary research platform at Kyoto Institute of Technology. Founded in 2014, D-lab brings together international researchers, universities, and local organizations to address social challenges through design innovation. My collaborations ranged from urban heat mitigation to creating speculative objects that reimagine future possibilities."
     },
     {
       id: 12,
       title: "Wormery Workshop 2024",
       type: "project",
+      link: "https://www.remakery.org/",
       image: "/images/image 12.png",
-      content: "Article content here..."
+      content: "At The Remakery, a South London cooperative workshop space, I collaborated with Japanese students from the UAL MA Global Collaborative Design Practice program to deliver a workshop teaching London residents alternative approaches to composting based on Japanese food waste practices."
     },
     {
       id: 13,
       title: "Illustration Misc 2015 - 2025",
       type: "project",
+      link: "https://www.instagram.com/franc.is.orange/",
       image: "/images/image 13.png",
-      content: "Project content here..."
+      content: "I'm an illustrator and documentary artist using comics and drawings as an ethnographic tool to capture daily life. My work draws inspiration from storytellers and social observers like Art Spiegelman, Joe Sacco, and George Grosz, who blend illustration with journalism and cultural documentation."
     },
     {
       id: 14,
@@ -96,7 +103,7 @@ export const portfolioItems = [
       type: "project",
       link: "https://myobjectsgallery.vercel.app/",
       image: "/images/image 14.png",
-      content: "Article content here..."
+      content: "Data of Everyday Objects is a website exploring the visible and hidden data footprints of common items. By inviting users to upload objects and consider their conventional and unconventional data points, the platform prompts reflection on the scope and implications of everyday data collection."
     },
     {
         id: 15,
@@ -118,57 +125,64 @@ export const portfolioItems = [
         id: 17,
         title: "Small Spaces Garden 2022",
         type: "project",
+        link: "https://maps.app.goo.gl/eUcywtabkfV1DYrW6",
         image: "/images/image 17.png",
-        content: "Article content here..."
+        content: "I turned a concrete balcony overlooking the Thameslink rail line at Loughborough Junction into a public garden. After noticing this empty space during my daily commute, I collaborated with the property owners to create a green garden visible to train passengers and accessible to local residents."
       },
       {
         id: 18,
         title: "Mettle Studio 2022 - 2024",
         type: "project",
+        link: "https://mettle-studio.com/",
         image: "/images/image 18.png",
-        content: "Project content here..."
+        content: "During my two-year tenure at Mettle Studio in Somerset House, I led the delivery of socially impactful digital projects. Working with clients ranging from Mott MacDonald to Phillips Auction House, I focused on developing design solutions that prioritized positive social outcomes."
       },
       {
         id: 19,
         title: "Outlandish 2020",
         type: "project",
+        link: "https://outlandish.com/",
         image: "/images/image 19.png",
-        content: "Article content here..."
+        content: "At Outlandish, a progressive tech cooperative, I contributed to social impact projects during summer 2020. Working alongside clients like Greenpeace, the Labour Party, and the British Society of Palestinian Academics, I gained experience in their cooperative approach to tech for good initiatives."
       },
       {
         id: 20,
         title: "Data Imaginaries 2024",
         type: "project",
         image: "/images/image 20.png",
-        content: "Project content here..."
+        content: "Data Imaginaries, a 2024 Kyoto-based project, explored public perceptions of data collection and usage. While our digital footprint shapes modern life, our understanding remains rooted in science fiction narratives. Through participatory workshops, we helped participants reconstruct their relationship with data, moving beyond abstract concepts to grasp its tangible role in daily life."
       },
       {
         id: 21,
         title: "Fountainbridge Wiki 2018",
         type: "project",
+        link: "https://civicsoup.co.uk/",
         image: "/images/image 21.png",
-        content: "Article content here..."
+        content: "I contributed to the design and construction of a WikiHouse in Edinburgh's Fountainbridge, a project initiated by architecture collective Civic Soup. Working alongside the collective, I helped build the open-source structure and supported public engagement events."
       },
       {
           id: 22,
           title: "Turinglab 2021",
           type: "project",
+          link: "https://www.turinglab.co.uk/",
           image: "/images/image 22.png",
-          content: "This Digital Probes Archive serves as an interactive collection of tools designed to illuminate the complex relationship between artificial intelligence and our digital commons. Each probe functions as a hands-on experiment, allowing citizens to directly engage with and understand how AI systems can impact our civic autonomy. From exploring algorithmic bias to examining data ownership, these probes reveal the often invisible ways AI shapes our digital landscape. By making these concepts tangible and explorable, the archive empowers visitors to think critically about AI's role in our society and the importance of protecting our collective digital rights."
+          content: "I served as a researcher and designer at Turinglab, an Imperial College-affiliated organization that teaches programming to children across Britain, with a focus on engaging girls and students from disadvantaged backgrounds in STEM. My role involved developing digital tools to support their mission of expanding programming education throughout UK schools."
         },
         {
           id: 23,
           title: "Recetas Urbanas 2017",
           type: "project",
+          link: "https://arte-util.org/projects/recetas-urbanas/",
           image: "/images/image 23.png",
-          content: "Article content here..."
+          content: "I collaborated with Recetas Urbanas, a design collective founded by Santiago Cirugeda that combines architecture, law, and social work. The group constructs mobile structures through community participation, using salvaged materials. Working in Madrid, I contributed to their library project—an initiative born from the challenge citizens face in improving urban spaces due to bureaucratic barriers around temporary public interventions."
         },
         {
           id: 24,
           title: "Moata Net Zero 2023",
           type: "project",
+          link: "https://www.mottmac.com/en-gb/news/zero-carbon-accelerator-launches-to-drive-net-zero-future-across-the-capital/",
           image: "/images/image 24.png",
-          content: "Article content here..."
+          content: "At Mettle Studio, I partnered with Mott MacDonald to develop a planning tool for civil engineers that maps net zero pathways by identifying opportunities to reduce emissions throughout project lifecycles, from materials sourcing to end-use impacts."
         },
         {
           id: 25,
