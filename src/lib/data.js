@@ -49,7 +49,7 @@ export const portfolioItems = [
       title: "Jura Residency 2019",
       type: "project",
       image: "/images/image 7.png",
-      content: "During a two-week residency in the Jura, I studied baroque instrument craftsmanship, focusing on clavichords and harpsichords. This experience shaped my interest in preserving traditional craft in the face of automation. We are living at a time of rapidly emerging technologies and risk losing our creative industries and professionals if these types of crafts aren't given the attention they deserve"
+      content: "During a two-week residency in the Jura, I studied baroque instrument craftsmanship, focusing on clavichords and harpsichords. This experience shaped my interest in preserving traditional craft in the face of automation."
     },
     {
         id: 8,

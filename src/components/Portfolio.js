@@ -146,16 +146,16 @@ const Portfolio = () => {
            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
              <div>
                <img
-                 src="/images/image 26.png"
+                 src="/images/image 30.png"
                  alt="About"
-                 className="w-full h-[400px] object-cover rounded"
+                 className="w-full h-[650px] object-cover rounded"
                />
              </div>
              <div className="prose max-w-none">
                <h1 className="text-2xl mb-6">About</h1>
-               <p>Josh is a designer and researcher based in London...</p>
-               <p>His practice explores the intersection of design, technology, and community engagement...</p>
-               <p>Currently working on projects that investigate traditional craftsmanship and its role in sustainable futures...</p>
+               <p>Hello, my name is Josh. I am a designer and researcher exploring participatory approaches to technology development and governance. My practice investigates how design can strengthen democratic engagement with emerging technologies, particularly focusing on building tools and methods that help communities shape the technologies affecting their lives.<br></br><br></br></p>
+               <p>Through roles at London design studios like Mettle Studio and Studio Output, as well as social impact organizations including Outlandish and Turinglab, I have developed expertise in creating digital tools that make complex systems more accessible and participatory. My work spans from civil engineering sustainability tools to educational platforms, always centered on building community agency and understanding.<br></br><br></br></p>
+               <p>Currently pursuing MA research, I am examining how participatory design methods can enhance civic engagement with AI governance, developing creative approaches that help citizens meaningfully participate in conversations about technology's role in society. My practice bridges theoretical frameworks around democratic inquiry with practical tools for collective imagination and decision-making.<br></br><br></br></p>
              </div>
            </div>
          </div>
