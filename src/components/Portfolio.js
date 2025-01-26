@@ -152,12 +152,12 @@ const Portfolio = () => {
                />
              </div>
              <div>
-  <h1 className="text-2xl mb-6">About</h1>
-  <p>Hello, I'm Josh. I'm a designer and researcher exploring participatory approaches to technology development and governance. My practice investigates how design can strengthen democratic engagement with emerging technologies, particularly focusing on building tools and methods that help communities shape the technologies affecting their lives.</p>
-  
-  <p>Through roles at London design studios like Mettle-Studio and Studio Output, as well as social impact organizations including Outlandish and Turinglab, I have developed expertise in creating digital tools that make complex systems more accessible and participatory. My work spans from civil engineering sustainability tools to educational platforms, always centered on building community agency and understanding.</p>
-  
-  <p>Currently pursuing MA research, I am examining how participatory design methods can enhance civic engagement with AI governance, developing creative approaches that help citizens meaningfully participate in conversations about technology&apos;s role in society. My practice bridges theoretical frameworks around democratic inquiry with practical tools for collective imagination and decision-making.</p>
+ <h1 className="text-2xl mb-6">About</h1>
+ <p>Hello, I&apos;m Josh. I&apos;m a designer and researcher exploring participatory approaches to technology development and governance. My practice investigates how design can strengthen democratic engagement with emerging technologies, particularly focusing on building tools and methods that help communities shape the technologies affecting their lives.<br /></p>
+ 
+ <p>Through roles at London design studios like Mettle-Studio and Studio Output, as well as social impact organizations including Outlandish and Turinglab, I have developed expertise in creating digital tools that make complex systems more accessible and participatory. My work spans from civil engineering sustainability tools to educational platforms, always centered on building community agency and understanding.<br /></p>
+ 
+ <p>Currently pursuing MA research, I am examining how participatory design methods can enhance civic engagement with AI governance, developing creative approaches that help citizens meaningfully participate in conversations about technology&apos;s role in society. My practice bridges theoretical frameworks around democratic inquiry with practical tools for collective imagination and decision-making.<br /></p>
 </div>
            </div>
          </div>
