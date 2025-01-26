@@ -9,15 +9,6 @@ const classNames = (...classes) => {
   return classes.filter(Boolean).join(' ');
 };
 
-const getTileSize = () => {
-  const sizes = [
-    'col-span-1 row-span-2',
-    'col-span-1 row-span-1',
-    'col-span-1 row-span-1'
-  ];
-  return sizes[Math.floor(Math.random() * sizes.length)];
-};
-
 const shuffleArray = (array) => {
   const newArray = [...array];
   for (let i = newArray.length - 1; i > 0; i--) {
@@ -27,17 +18,38 @@ const shuffleArray = (array) => {
   return newArray;
 };
 
+const getTileSize = (isMobile) => {
+  if (isMobile) return 'col-span-1 row-span-1';
+  
+  const sizes = [
+    'col-span-1 row-span-2',
+    'col-span-1 row-span-1',
+    'col-span-1 row-span-1'
+  ];
+  return sizes[Math.floor(Math.random() * sizes.length)];
+};
+
 const Portfolio = () => {
   const [filter, setFilter] = useState('all');
   const [selectedItem, setSelectedItem] = useState(null);
   const [items, setItems] = useState([]);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
     const itemsWithSizes = shuffleArray(portfolioItems).map(item => ({
       ...item,
-      size: getTileSize()
+      size: getTileSize(window.innerWidth < 768)
     }));
     setItems(itemsWithSizes);
+
+    return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
   const filteredItems = items.filter(item => 
@@ -46,15 +58,14 @@ const Portfolio = () => {
 
   return (
     <div className="min-h-screen bg-white font-['Heimat Mono Regular',_'Arial',_monospace]">
-      {/* Header */}
       <header className="fixed top-0 left-0 right-0 bg-white z-50 border-b">
-        <div className="max-w-screen-2xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div className="max-w-screen-2xl mx-auto px-4 md:px-6 py-4 flex flex-col md:flex-row md:justify-between md:items-center gap-4">
           <div>
-          <h3 className="text-xl text-black hover:text-[#5CE98B] transition-colors duration-300">JOSH GREEN</h3>
-          <p className="text-sm">Design. Research. Writing.</p>
+            <h3 className="text-xl text-black hover:text-[#5CE98B] transition-colors duration-300">JOSH GREEN</h3>
+            <p className="text-sm">Design. Research. Writing.</p>
           </div>
           
-          <nav className="flex gap-8">
+          <nav className="flex gap-4 md:gap-8">
             <button
               onClick={() => setFilter('all')}
               className={classNames(
@@ -86,17 +97,16 @@ const Portfolio = () => {
         </div>
       </header>
 
-      {/* Main Grid */}
-      <main className="pt-20 px-6">
+      <main className="pt-32 md:pt-20 px-4 md:px-6">
         <div className="max-w-screen-2xl mx-auto">
-        <div className="grid grid-cols-5 auto-rows-[200px] gap-6 mt-4">
+          <div className="grid grid-cols-1 md:grid-cols-5 auto-rows-[200px] gap-4 md:gap-6 mt-4">
             {filteredItems.map((item) => (
               <button
                 key={item.id}
                 onClick={() => setSelectedItem(item)}
                 className={classNames(
                   "group relative overflow-hidden",
-                  item.size
+                  isMobile ? 'col-span-1' : item.size
                 )}
               >
                 <img
@@ -114,10 +124,9 @@ const Portfolio = () => {
         </div>
       </main>
 
-      {/* Project/Article Modal */}
       {selectedItem && (
         <div className="fixed inset-0 bg-white z-50 overflow-y-auto">
-          <div className="max-w-screen-xl mx-auto px-6 py-20">
+          <div className="max-w-screen-xl mx-auto px-4 md:px-6 py-20">
             <button
               onClick={() => setSelectedItem(null)}
               className="fixed top-6 right-6 text-xl"
@@ -129,13 +138,13 @@ const Portfolio = () => {
               <img
                 src={selectedItem.image}
                 alt={selectedItem.title}
-                className="w-[600px] h-[400px] object-cover mb-8"
+                className="w-full md:w-[600px] h-[300px] md:h-[400px] object-cover mb-8"
               />
-              <h1 className="text-2xl mb-6">{selectedItem.title}</h1>
-              <div className="prose max-w-96"> 
+              <h1 className="text-xl md:text-2xl mb-6">{selectedItem.title}</h1>
+              <div className="prose max-w-full md:max-w-96"> 
                 {selectedItem.link && (
                   <>
-                    <p><a href={selectedItem.link}>Link: {selectedItem.title}</a></p>
+                    <p><a href={selectedItem.link} style={{ color: '#5CE98B', textDecoration: 'underline' }}>{selectedItem.title}</a></p>
                     <br />
                   </>
                 )}
