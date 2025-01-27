@@ -119,7 +119,7 @@ export const portfolioItems = [
         type: "project",
         link: "https://www.quantifiedcarbon.com/",
         image: "/images/image 16.png",
-        content: "Project content here..."
+        content: "At Quantified Carbon, I contributed to advancing clean energy transitions through research on stakeholder engagement for their innovative Repower Coal initiative. This probono project explored the feasibility of retrofitting existing coal power stations with small modular nuclear reactors (SMRs) - a novel approach to decarbonization that leverages existing infrastructure and grid connections. My research focused on developing effective strategies to build support among policy makers and environmental campaigners, bridging the gap between technical climate modeling and practical policy implementation."
       },
       {
         id: 17,

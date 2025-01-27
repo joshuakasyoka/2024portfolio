@@ -118,7 +118,7 @@ const Portfolio = () => {
      <main className="pt-32 md:pt-20 px-4 md:px-6">
        {page === 'portfolio' ? (
          <div className="max-w-screen-2xl mx-auto">
-           <div className="grid grid-cols-1 md:grid-cols-5 auto-rows-[200px] gap-4 md:gap-6 mt-4">
+           <div className="grid grid-cols-1 md:grid-cols-5 auto-rows-[200px] gap-4 md:gap-8 mt-4">
              {filteredItems.map((item) => (
               <button
   key={item.id}
