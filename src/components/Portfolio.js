@@ -1,9 +1,8 @@
 'use client';
 
-<link rel="stylesheet" href="https://use.typekit.net/exw6euy.css"></link>
-
 import React, { useState, useEffect } from 'react';
 import { portfolioItems } from '../lib/data';
+import '../../src/app/globals.css';
 
 const classNames = (...classes) => {
  return classes.filter(Boolean).join(' ');
@@ -58,11 +57,13 @@ const Portfolio = () => {
  );
 
  return (
-  <div className="min-h-screen bg-white font-['Helvetica Neue',_'Arial',_monospace]">
+  <div className="min-h-screen bg-white">
   <header className="fixed top-0 left-0 right-0 bg-white z-50 border-b">
+  <link rel="stylesheet" href="https://use.typekit.net/lsk8rgz.css"></link>
     <div className="max-w-screen-2xl mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
       <div>
-        <h3 className="text-xl text-black hover:text-[#5CE98B] transition-colors duration-300">JOSH GREEN</h3>
+      <h1 className="text-xl text-black hover:text-[#5CE98B] transition-colors duration-300">JOSH GREEN</h1>
+        <link rel="stylesheet" href="https://use.typekit.net/lsk8rgz.css"></link>
         <p className="text-sm">Design. Research. Writing.</p>
       </div>
       <nav className="flex gap-4 md:gap-8">

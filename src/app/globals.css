@@ -15,7 +15,9 @@
 }
 
 body {
+  font-family: "elza-text", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   color: var(--foreground);
   background: var(--background);
-  font-family: Helvetica Neue, Helvetica, sans-serif;
 }
