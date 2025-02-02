@@ -58,7 +58,7 @@ const Portfolio = () => {
  );
 
  return (
-  <div className="min-h-screen bg-white font-['Heimat Mono Regular',_'Arial',_monospace]">
+  <div className="min-h-screen bg-white font-['Helvetica Neue',_'Arial',_monospace]">
   <header className="fixed top-0 left-0 right-0 bg-white z-50 border-b">
     <div className="max-w-screen-2xl mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
       <div>
