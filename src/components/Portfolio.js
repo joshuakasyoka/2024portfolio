@@ -136,7 +136,7 @@ const Portfolio = () => {
   />
   <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-opacity duration-200" />
   <div className="absolute bottom-0 left-0 right-0 p-4 bg-white">
-    <h2 className="text-sm group-hover:text-[#5CE98B] transition-colors duration-300">{item.title}</h2>
+    <h2 className="text-l group-hover:text-[#5CE98B] transition-colors duration-300">{item.title}</h2>
   </div>
 </button>
              ))}
